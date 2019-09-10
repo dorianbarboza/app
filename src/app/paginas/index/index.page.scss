@@ -1,3 +1,7 @@
+ion-content .padding{
+  background-color: black;
+}
+
 .headerGob{
     background-image: url("/assets/imagenes/header_QC2.png");
 }
@@ -47,8 +51,11 @@
         ##################################################################*/
 
 .img2 {
-  height: 50px;
-  width: 50px;
+  margin-top: 20px;
+  height: 150px;
+  width: 200px;
+  display:block;
+  margin:auto;
 }
 .texto2 {
   margin-top: 100px;

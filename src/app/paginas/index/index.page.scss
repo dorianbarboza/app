@@ -1,8 +1,12 @@
+#principal{
+  background-image: url("/assets/imagenes/headerCancunfondo.jpg");
+}
+
 ion-content .padding{
   background-color: black;
 }
 
-.fondoGob{
+.headerGob {
   margin-top: 8%;
   width: auto;
   height: 70px;
@@ -11,17 +15,9 @@ ion-content .padding{
   filter:alpha(opacity=60); /* IE < 9.0 */
 }
 
-
-
-#principal{
-  background-image: url("/assets/imagenes/headerCancunfondo.jpg");
-}
-
 /*##################################################################
-
                           PARTE 1
-
-    ##################################################################*/
+##################################################################*/
 
 .seccion1{
   margin-top: 100px;
@@ -51,22 +47,17 @@ ion-content .padding{
 }
 
 /*##################################################################
-
                           PARTE 2
-
-    ##################################################################*/
+##################################################################*/
 
 .seccion2{
   margin-top: 100px;
   margin-top: 100px;
     }
 
-    /*##################################################################
-
+/*##################################################################
                               PARTE 3
-
-        ##################################################################*/
-
+##################################################################*/
 
 .seccion3{
   margin-top: 100px;
@@ -88,12 +79,7 @@ ion-content .padding{
   display:block;
   margin:auto;
 }
-/*
+
 .fab{
   margin-bottom: 50px;
-}*/
-/*
-.texto2 {
-  margin-top: 100px;
 }
-*/

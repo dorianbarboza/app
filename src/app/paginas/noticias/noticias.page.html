@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title>Noticias</ion-title>
+    <ion-title>Mas relevante</ion-title>
 
     <ion-buttons slot="start">
    <ion-back-button routerLink="/home"></ion-back-button>
@@ -9,14 +9,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="masters">
 
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
   <ion-item>
-  <ion-card>
+    <!--
+  <ion-card color="secondary">
   <ion-card-header>
     <ion-card-subtitle></ion-card-subtitle>
     <ion-card-title>
@@ -30,20 +31,38 @@ Rehabilitación del hospital general de cancún</ion-card-title>
     <img src="assets/imagenes/CA30NOV0401B.jpg">
   </ion-card-content>
 </ion-card>
+-->
 </ion-item>
 
-<ion-item>
-  <h1>ASDFG</h1>
-</ion-item>
 
-<ion-item>
-  <h1>ASDFG</h1>
-</ion-item>
 
-<ion-item>
-  <h1>ASDFG</h1>
-</ion-item>
+<ion-slides>
 
+        <ion-slide>
+
+          <img src="assets/imagenes/CA30NOV0401B.jpg">
+
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/imagenes/m_vinieta_amarilla.png"/>
+          <h2>What is Ionic?</h2>
+          <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/imagenes/m_vinieta_amarilla.png"/>
+          <h2>What is Ionic Pro?</h2>
+          <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/imagenes/m_vinieta_amarilla.png"/>
+          <h2>Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </ion-slide>
+
+      </ion-slides>
 
 
 </ion-content>

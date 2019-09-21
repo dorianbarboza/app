@@ -1,48 +1,11 @@
-.masters {
-  //background-color: white;
+ion-card{
+  height: auto;
+  width: auto;
+  margin: 0px;
+  margin-bottom: 10%;
 }
 
-ion-content {
-  --ion-background-color: #f5f5f5;;
-}
-
-
-/* ion slide */
 :root {
-  --ion-safe-area-top: 20px;
-  --ion-safe-area-bottom: 22px;
-}
-.swiper-slide {
-  display: block;
-}
-ion-slide > h2 {
-  margin-top: 2.8rem;
-}
-ion-slide > img {
-  max-height: 50%;
-  max-width: 60%;
-  margin: 36px 0;
-}
-
-/* class seccion */
-.item-seccion {
-  margin-top: 10%;
-}
-
-ion-img{
-   border-radius:5px;
-}
-.item-slides {
-  margin-bottom: -100px;
-}
-
-.item-card {
-  //margin-top: -20px;
-  width: 100%;
-  height: 40px;
-  display: block;
-  position: relative;
-  bottom: 0;
-}
-
-/* part 1 */
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }

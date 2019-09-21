@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioIndexService } from '../../servicios/servicio-index.service';
 
 @Component({
   selector: 'app-noticias',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasPage implements OnInit {
 
-  constructor() { }
+  arreglo: any[] = [];
+
+  constructor(private _servicio: ServicioIndexService) {
+    this._servicio.get()
+   .subscribe( (data: any) => {
+     console.log(data);
+     this.arreglo = data;
+   })
+   }
 
   ngOnInit() {}
 

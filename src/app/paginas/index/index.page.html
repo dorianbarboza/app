@@ -3,18 +3,31 @@
     <ion-title>Vigila tu obra</ion-title>
 
     <ion-buttons slot="start">
-   <ion-back-button routerLink="/home"></ion-back-button>
-   </ion-buttons>
+    
+  <ion-button (click)="toggleMenu()">
+    <ion-icon slot="icon-only" name="menu"></ion-icon>
+  </ion-button>
+  <!--
+  <ion-menu-button color="primary" menu="primerMenu">
+  </ion-menu-button>
+  -->
+</ion-buttons>
+
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="padding">
-  <div id="principal">
+
+
+
+  <div id="seccion">
   <br>
 
   <div class="headerGob">
     <img src="assets/imagenes/header_QC2.png">
   </div>
+
 
 <!--##################################################################
                               PARTE 1

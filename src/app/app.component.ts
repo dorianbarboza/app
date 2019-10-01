@@ -21,6 +21,11 @@ export class AppComponent {
     title: 'Noticias',
     url: '/noticias',
     icon: 'paper'
+  },
+  {
+    title: 'Licitaciones',
+    url: '/licitaciones',
+    icon: 'logo-buffer'
   }
 ];
 

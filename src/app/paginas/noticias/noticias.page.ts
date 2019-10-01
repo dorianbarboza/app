@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicioIndexService } from '../../servicios/servicio-index.service';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -9,16 +8,9 @@ import { AlertController } from '@ionic/angular';
 })
 export class NoticiasPage implements OnInit {
 
-  arreglo: any[] = [];
 
-  constructor(private _servicio: ServicioIndexService,
-              public alertController: AlertController) {
-    this._servicio.get()
-   .subscribe( (data: any) => {
-     console.log(data);
-     this.arreglo = data;
-   })
-   }
+
+  constructor(public alertController: AlertController) {}
 
   ngOnInit() {}
 

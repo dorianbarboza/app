@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>Licitaciones</ion-title>
 
     <ion-buttons slot="start">
@@ -15,9 +15,22 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
+  <ion-searchbar animated
+                  (ionChange)="buscar()">
+  </ion-searchbar>
+
   <ion-item *ngFor="let dato of datos">
-  <p>{{dato.EjercicioFiscal}}</p>
- </ion-item>
+  <ion-card>
+       <ion-card-header>
+         <ion-card-subtitle>Cedula: {{ dato.Cedula}}</ion-card-subtitle>
+         <ion-card-subtitle>Nombre: {{ dato.NombreObraPublica }}</ion-card-subtitle>
+       </ion-card-header>
+       <ion-card-content>
+         <p>Instancia Ejecutora: {{dato.InstanciaEjecutora}}</p>
+         <p>Fecha: {{dato.FechaInicioContrato}}</p>
+       </ion-card-content>
+     </ion-card>
+    </ion-item>
 
 
 </ion-content>

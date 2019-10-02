@@ -9,7 +9,7 @@ export class ServicioIndexService {
   public url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "http://http://192.168.43.117:2145/RestVTO/index.php/Vigila_WS/";
+    this.url = "http://192.168.43.117:2145/RestVTO/index.php/Vigila_WS/";
     console.log('Service run');
   }
 

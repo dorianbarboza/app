@@ -14,8 +14,7 @@ export class FiltroPipe implements PipeTransform {
     texto = texto.toLowerCase();
 
     return arreglo.filter(item =>{
-      return item.NombreObraPublica.toLowerCase()
-               .includes(texto);
+      return item.NombreObraPublica.toLowerCase().includes(texto);
     });
 
 

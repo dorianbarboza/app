@@ -13,6 +13,8 @@ export class LicitacionesPage implements OnInit {
 
   datos: any[] = [];
 
+  data: any[] = Array(20);
+
   constructor(private _servicio: ServicioIndexService) {
     this._servicio.get()
     .subscribe( (datos: any) => {
@@ -37,6 +39,26 @@ export class LicitacionesPage implements OnInit {
     //console.log(event);
     this.textoBuscar = event.detail.value;
   }
+
+  loadData(event) {
+      console.log('Cargando siguientes...');
+
+      setTimeout(() => {
+
+        if(this.data.length > 50){
+          event.target.complete();
+        //  this.infiniteScroll.disabled = true;
+          return;
+        }
+
+        const nuevoArr = Array(20);
+        this.data.push( ...nuevoArr);
+        event.target.complete();
+
+      },1000);
+
+
+    }
 
 
 }

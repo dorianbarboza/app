@@ -21,7 +21,7 @@
 
 
 
-  <ion-item *ngFor="let dato of datos | filtro: textoBuscar">
+  <ion-item *ngFor="let dato of datos | filtro: textoBuscar; let i = index">
   <ion-card>
        <ion-card-header>
          <ion-card-subtitle>Cedula: {{ dato.Cedula}}</ion-card-subtitle>
@@ -33,6 +33,11 @@
        </ion-card-content>
      </ion-card>
     </ion-item>
+
+    <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Cargando...">
+      </ion-infinite-scroll-content>
+ </ion-infinite-scroll>
 
 
 </ion-content>

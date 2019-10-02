@@ -13,7 +13,7 @@ import { Subscription, timer, from } from 'rxjs';
 })
 export class AppComponent {
 
-   showSplash = true; // <-- show animation
+   showSplash = false; // <-- show animation
 
   public appPages = [
   {

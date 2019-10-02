@@ -9,13 +9,15 @@ import { ServicioIndexService } from '../../servicios/servicio-index.service';
 })
 export class LicitacionesPage implements OnInit {
 
+  textoBuscar = '';
+
   datos: any[] = [];
 
   constructor(private _servicio: ServicioIndexService) {
     this._servicio.get()
-    .subscribe( (data: any) => {
-      console.log(data);
-      this.datos = data;
+    .subscribe( (datos: any) => {
+      console.log(datos);
+      this.datos = datos;
     })
    }
 
@@ -30,5 +32,11 @@ export class LicitacionesPage implements OnInit {
       event.target.complete();
     }, 2000);
   }
+
+  buscar( event ){
+    //console.log(event);
+    this.textoBuscar = event.detail.value;
+  }
+
 
 }

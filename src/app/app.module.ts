@@ -13,10 +13,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ComponentesModule } from './componentes/componentes.module';
 
+import { PipesModule } from './pipes/pipes.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ComponentesModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ComponentesModule, PipesModule],
   providers: [
     StatusBar,
     SplashScreen,

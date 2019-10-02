@@ -16,10 +16,12 @@
   </ion-refresher>
 
   <ion-searchbar animated
-                  (ionChange)="buscar()">
+                  (ionChange)="buscar( $event )">
   </ion-searchbar>
 
-  <ion-item *ngFor="let dato of datos">
+
+
+  <ion-item *ngFor="let dato of datos | filtro: textoBuscar">
   <ion-card>
        <ion-card-header>
          <ion-card-subtitle>Cedula: {{ dato.Cedula}}</ion-card-subtitle>

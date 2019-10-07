@@ -17,7 +17,7 @@ export class AppComponent {
 
   public appPages = [
   {
-    title: 'Home',
+    title: 'Bienvenido',
     url: '/home',
     icon: 'home'
   },
@@ -30,6 +30,11 @@ export class AppComponent {
     title: 'Licitaciones',
     url: '/licitaciones',
     icon: 'logo-buffer'
+  },
+  {
+    title: 'Solicitud de obra',
+    url: '/solicitud',
+    icon: 'add-circle'
   }
 ];
 

@@ -27,12 +27,12 @@ export class AppComponent {
     icon: 'paper'
   },
   {
-    title: 'Licitaciones',
+    title: 'Listado de licitaciones',
     url: '/licitaciones',
     icon: 'logo-buffer'
   },
   {
-    title: 'Solicitud de obra',
+    title: 'Crear solicitud de obra',
     url: '/solicitud',
     icon: 'add-circle'
   }

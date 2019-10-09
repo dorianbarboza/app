@@ -35,6 +35,11 @@ export class AppComponent {
     title: 'Crear solicitud de obra',
     url: 'form',
     icon: 'add-circle'
+  },
+  {
+    title: 'Graficas',
+    url: 'graficas',
+    icon: 'podium'
   }
 ];
 

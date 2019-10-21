@@ -40,6 +40,11 @@ export class AppComponent {
     title: 'Graficas',
     url: 'graficas',
     icon: 'podium'
+  },
+  {
+    title: 'Prueba',
+    url: 'prueba',
+    icon: 'build'
   }
 ];
 

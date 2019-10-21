@@ -15,6 +15,8 @@ import { ComponentesModule } from './componentes/componentes.module';
 
 import { PipesModule } from './pipes/pipes.module';
 
+import { SQLite } from '@ionic-native/sqlite/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -22,6 +24,7 @@ import { PipesModule } from './pipes/pipes.module';
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
 
